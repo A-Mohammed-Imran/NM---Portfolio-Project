@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #007BFF;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .about {
+            padding: 40px 20px;
+            background-color: #e2e2e2;
+            text-align: center;
+        }
+
+        .qualification {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .skills {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .skills h2 {
+            margin-bottom: 20px;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skills li {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects {
+            padding: 40px 20px;
+            background-color: #e2e2e2;
+            text-align: center;
+        }
+
+        .projects h2 {
+            margin-bottom: 20px;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .contact {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input,
+        form textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .skills ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Portfolio</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#qualification">Qualification</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="home" class="hero">
+        <div class="hero-image">
+            <img src="Pro.jpeg" alt="A Mohammed Imran" loading="lazy">
+        </div>
+        <h2>Hi, I'm <b>A Mohammed Imran</b></h2>
+        <p>Aspiring Web Developer | Learning HTML & CSS</p>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <h3>Who Am I?</h3>
+        <p>I'm a passionate Computer Science student with a strong interest in web development and software engineering.
+            I enjoy turning complex problems into simple, beautiful and intuitive solutions.</p>
+        <p>My goal is to pursue a career as a Full-Stack Developer where I can apply my technical skills and creativity
+            to build applications that make a difference.</p>
+        <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or
+            sharing my knowledge through tech blogs.</p>
+        <br>
+        <h3>Current Status</h3>
+        <p>
+            I am a 2nd-year undergraduating student studying Computer Science at "Mazharul uloom college vellor".
+            I am interested in web development, programming, and learning new technologies.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="qualification" class="qualification">
+        <h2>My Qualification</h2>
+        <ul>
+            <li>Bachelor of Science in Computer Science - Mazharul uloom college vellor (2022 - Present)</li>
+            <li>Higher Secondary Education - Islamiah Higher Secondary School (2020 - 2022)</li>
+            <li>Secondary Education - ABC High School (2018 - 2020)</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Basics of JavaScript</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project One (Registration Form)</h3>
+            <img src="Register.jpg" alt="Project One Image" />
+            <p>A simple web-page built with HTML and CSS.</p>
+            <p>A simple registration</p>
+            <p>Note: Only open in desktop size</p>
+            <pre>Click here to watch : <a href="https://registerami.netlify.app/" target="_blank">Registration Form</a></pre>
+        </div>
+        <div class="project">
+            <h3>Project Two (Cartoon Network)</h3>
+            <img src="CN.png" alt="Project Two Image" />
+            <p>Another project demonstrating layout skills.</p>
+            <p>Cartoon network.</p>
+            <pre>Click here to watch : <a href="https://cartoon-123.netlify.app/" target="_blank">Cartoon Network</a></pre>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: mohammedimranat@gmail.com</p>
+        <p>LinkedIn: <a
+                href="https://www.linkedin.com/in/mohammed-imran-02594b343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin.com/in/mohammed-imran</a>
+        </p>
+        <p>GitHub: <a href="https://github.com/mohammed-imran">github.com/mohammed-imran</a></p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Made with ❤️ by <b><i>A Mohammed Imran</i></b></p>
+    </footer>
+</body>
+
+</html>
